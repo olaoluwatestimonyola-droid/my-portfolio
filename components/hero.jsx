@@ -33,7 +33,7 @@ function Hero() {
       </div>
 
       <div className="hero-image">
-        <img src="/my-picture.jpg" alt="Olaoluwa Olasubomi" />
+        <img src="/images/profile.png" alt="Olaoluwa Olasubomi" />
       </div>
     </section>
   );
