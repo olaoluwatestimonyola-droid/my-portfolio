@@ -1,0 +1,202 @@
+
+/* Hero Section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 80px 8%;
+  background: #080b14;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blue Glow Effect */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #2563eb;
+  filter: blur(150px);
+  opacity: 0.2;
+  border-radius: 50%;
+  top: 15%;
+  right: 5%;
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Intro Text */
+.intro {
+  color: #3b82f6;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+/* Main Heading */
+.hero h1 {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #3b82f6;
+}
+
+/* Job Title */
+.hero h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* Description */
+.description {
+  max-width: 550px;
+  color: #94a3b8;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #60a5fa;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+/* Mobile Responsive */
+.hero {
+  min-height: 85vh;
+  background: #050505;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 7%;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+/* NAME AND INTRODUCTION ON THE LEFT */
+
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.intro {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: clamp(42px, 5vw, 76px);
+  color: #168cff;
+  line-height: 1.12;
+  margin: 15px 0 30px;
+  overflow-wrap: anywhere;
+}
+
+.hero-content h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  margin-bottom: 25px;
+}
+
+.hero-content h2 span {
+  color: #168cff;
+}
+
+.description {
+  color: #cccccc;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* CONTACT BUTTON */
+
+.hero-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #168cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: #0066cc;
+  transform: translateY(-3px);
+}
+
+/* PICTURE ON THE RIGHT */
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 430px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 6px solid #168cff;
+  border-radius: 50%;
+  box-shadow: 0 0 35px rgba(22, 140, 255, 0.65);
+}
+
+/* MOBILE PHONE DESIGN */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 6%;
+    gap: 35px;
+  }
+
+  .hero-image img {
+    max-width: 280px;
+  }
+
+  .intro {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}

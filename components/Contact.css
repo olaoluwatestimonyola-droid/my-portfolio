@@ -1,0 +1,169 @@
+
+.contact-section {
+  padding: 90px 8%;
+  background: #050816;
+  color: #ffffff;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-eyebrow {
+  color: #168bff;
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.contact-container > h2 {
+  font-size: clamp(36px, 5vw, 52px);
+  margin-bottom: 18px;
+}
+
+.contact-container > h2 span {
+  color: #168bff;
+}
+
+.contact-description {
+  color: #a8bad5;
+  line-height: 1.8;
+  max-width: 550px;
+  margin-bottom: 45px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 45px;
+  align-items: start;
+}
+
+.contact-info h3 {
+  font-size: 27px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.contact-info > p {
+  color: #a8bad5;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 25px 0;
+}
+
+.contact-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: #101c35;
+  border: 1px solid #168bff;
+  border-radius: 10px;
+  color: #168bff;
+  font-size: 22px;
+}
+
+.contact-detail h4 {
+  margin-bottom: 6px;
+}
+
+.contact-detail p {
+  color: #a8bad5;
+  overflow-wrap: anywhere;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #0d1426;
+  border: 1px solid #1d2a45;
+  border-radius: 14px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 9px;
+  color: #dce8ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 22px;
+  background: #070d1b;
+  color: #ffffff;
+  border: 1px solid #263753;
+  border-radius: 7px;
+  outline: none;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #168bff;
+  box-shadow: 0 0 0 2px #168bff20;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #7788a5;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 15px 20px;
+  background: #168bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-button:hover {
+  background: #0068d9;
+}
+
+.contact-button span {
+  margin-left: 8px;
+}
+
+.form-note {
+  margin-top: 15px;
+  color: #8494ae;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  .contact-section {
+    padding: 65px 6%;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+}
