@@ -238,3 +238,221 @@ footer {
   border-radius: 50%;
   display: block;
 }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  margin-bottom: 16px;
+}
+
+.project-description {
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+
+.projects-heading .eyebrow {
+  margin-bottom: 8px !important;
+}
+
+.projects-heading h2 {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+.projects-heading > p:last-child {
+  margin-top: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.projects-heading {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+/* Bigger project heading with generous spacing */
+.projects-section {
+  padding-top: 120px !important;
+  padding-bottom: 140px !important;
+}
+
+.projects-heading {
+  max-width: 800px;
+  margin: 0 auto 80px !important;
+  text-align: center;
+}
+
+.projects-heading .eyebrow {
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin-bottom: 18px !important;
+}
+
+.projects-heading h2 {
+  font-size: 52px !important;
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+}
+
+.projects-heading > p:last-child {
+  font-size: 18px;
+  line-height: 1.9 !important;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 700px) {
+  .projects-section {
+    padding-top: 85px !important;
+    padding-bottom: 90px !important;
+  }
+
+  .projects-heading h2 {
+    font-size: 38px !important;
+  }
+
+  .projects-heading > p:last-child {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+/* BIGGER MY SKILLS SECTION */
+.skills-section {
+  padding: 120px 8% 140px !important;
+}
+
+.skills-section .eyebrow {
+  font-size: 17px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.skills-section h2 {
+  font-size: 52px !important;
+  margin-bottom: 35px !important;
+}
+
+.skills-section .skills-grid {
+  gap: 25px;
+}
+
+.skills-section .skill-card {
+  padding: 35px;
+  font-size: 20px;
+  min-height: 130px;
+}
+
+@media (max-width: 700px) {
+  .skills-section {
+    padding: 85px 6% 95px !important;
+  }
+
+  .skills-section h2 {
+    font-size: 40px !important;
+  }
+
+  .skills-section .skill-card {
+    padding: 25px;
+  }
+}
+
+
+
+/* ===== PORTFOLIO SLIDE ANIMATIONS ===== */
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Respect visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+

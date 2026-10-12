@@ -111,3 +111,159 @@
     padding: 20px;
   }
 }
+
+
+
+
+/* BIGGER MY TOOLKIT / MY SKILLS SECTION */
+
+.skills-section {
+  padding: 140px 8% 160px !important;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-subtitle {
+  font-size: 18px !important;
+  letter-spacing: 5px;
+  margin-bottom: 22px !important;
+}
+
+.skills-title {
+  font-size: 60px !important;
+  margin-bottom: 30px !important;
+}
+
+.skills-description {
+  font-size: 20px !important;
+  line-height: 1.9 !important;
+  max-width: 700px;
+  margin-bottom: 60px !important;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px !important;
+}
+
+.skill-card {
+  padding: 35px !important;
+  min-height: 120px;
+  border-radius: 18px;
+}
+
+.skill-info h3 {
+  font-size: 24px !important;
+}
+
+.skill-info span {
+  font-size: 18px !important;
+}
+
+.skill-bar {
+  height: 10px !important;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .skills-section {
+    padding: 90px 6% 100px !important;
+  }
+
+  .skills-title {
+    font-size: 42px !important;
+  }
+
+  .skills-description {
+    font-size: 17px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 25px !important;
+  }
+}
+
+
+
+
+/* EXTRA LARGE SKILLS SECTION */
+
+.skills-section {
+  padding: 180px 8% 200px !important;
+}
+
+.skills-container {
+  max-width: 1400px !important;
+  margin: 0 auto;
+}
+
+.skills-subtitle {
+  font-size: 24px !important;
+  letter-spacing: 7px !important;
+  margin-bottom: 30px !important;
+}
+
+.skills-title {
+  font-size: 80px !important;
+  margin-bottom: 40px !important;
+}
+
+.skills-description {
+  font-size: 25px !important;
+  line-height: 2 !important;
+  max-width: 950px !important;
+  margin-bottom: 80px !important;
+}
+
+.skills-grid {
+  gap: 40px !important;
+}
+
+.skill-card {
+  padding: 50px !important;
+  min-height: 170px !important;
+}
+
+.skill-info h3 {
+  font-size: 32px !important;
+}
+
+.skill-info span {
+  font-size: 24px !important;
+}
+
+.skill-bar {
+  height: 14px !important;
+  margin-top: 25px !important;
+}
+
+@media (max-width: 700px) {
+  .skills-section {
+    padding: 100px 6% 120px !important;
+  }
+
+  .skills-title {
+    font-size: 48px !important;
+  }
+
+  .skills-description {
+    font-size: 19px !important;
+  }
+
+  .skill-card {
+    padding: 30px !important;
+  }
+
+  .skill-info h3 {
+    font-size: 26px !important;
+  }
+}

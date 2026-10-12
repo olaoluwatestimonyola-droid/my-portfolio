@@ -3,14 +3,27 @@ import React from 'react';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
 import './App.css';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+      easing: 'ease-out',
+    });
+  }, []);
+
   return (
+
     <div className="portfolio">
 
       {/* NAVIGATION */}
-      <header className="navbar">
+      <header className="navbar" data-aos="fade-down">
         <a className="logo" href="#home">
           DEVTESTI
         </a>
@@ -25,7 +38,7 @@ function App() {
 
       {/* HOME SECTION */}
       <section className="hero" id="home">
-        <div className="hero-content">
+        <div className="hero-content" data-aos="fade-right">
           <p className="eyebrow">HELLO, I'M</p>
 
           <h1>
@@ -46,7 +59,7 @@ function App() {
           </a>
         </div>
 
-        <div className="photo-frame">
+        <div className="photo-frame" data-aos="fade-left">
           <img
             src="/images/profile.png"
             alt="Olaoluwa Testimony"
@@ -59,14 +72,14 @@ function App() {
       <Projects />
 
       {/* SKILLS SECTION */}
-      <section className="section" id="skills">
+     <section className="section" id="skills" data-aos="fade-up">
         <p className="eyebrow">MY TOOLKIT</p>
 
         <h2>
           My <span>Skills</span>
         </h2>
 
-        <div className="skills-list">
+       <div className="skills-list" data-aos="zoom-in">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
@@ -79,7 +92,7 @@ function App() {
       <Contact />
 
       {/* FOOTER */}
-      <footer>
+     <footer data-aos="fade-up">
         © 2026 Olaoluwa Testimony Olasubomi. Built with 💙
       </footer>
 
